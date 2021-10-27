@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		272085B52727EE0200396402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272085B42727EE0200396402 /* AppDelegate.swift */; };
 		272085B72727EE0200396402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272085B62727EE0200396402 /* SceneDelegate.swift */; };
-		272085B92727EE0200396402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272085B82727EE0200396402 /* ViewController.swift */; };
+		272085B92727EE0200396402 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272085B82727EE0200396402 /* LoginViewController.swift */; };
 		272085BC2727EE0200396402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272085BA2727EE0200396402 /* Main.storyboard */; };
 		272085BE2727EE0600396402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272085BD2727EE0600396402 /* Assets.xcassets */; };
 		272085C12727EE0600396402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272085BF2727EE0600396402 /* LaunchScreen.storyboard */; };
+		27FAE42F2729622C008732D6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAE42E2729622C008732D6 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		272085B12727EE0200396402 /* AnanevAYU_HW2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnanevAYU_HW2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272085B42727EE0200396402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272085B62727EE0200396402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		272085B82727EE0200396402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		272085B82727EE0200396402 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		272085BB2727EE0200396402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		272085BD2727EE0600396402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272085C02727EE0600396402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272085C22727EE0600396402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FAE42E2729622C008732D6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				272085B42727EE0200396402 /* AppDelegate.swift */,
 				272085B62727EE0200396402 /* SceneDelegate.swift */,
-				272085B82727EE0200396402 /* ViewController.swift */,
+				272085B82727EE0200396402 /* LoginViewController.swift */,
+				27FAE42E2729622C008732D6 /* WelcomeViewController.swift */,
 				272085BA2727EE0200396402 /* Main.storyboard */,
 				272085BD2727EE0600396402 /* Assets.xcassets */,
 				272085BF2727EE0600396402 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272085B92727EE0200396402 /* ViewController.swift in Sources */,
+				272085B92727EE0200396402 /* LoginViewController.swift in Sources */,
+				27FAE42F2729622C008732D6 /* WelcomeViewController.swift in Sources */,
 				272085B52727EE0200396402 /* AppDelegate.swift in Sources */,
 				272085B72727EE0200396402 /* SceneDelegate.swift in Sources */,
 			);
