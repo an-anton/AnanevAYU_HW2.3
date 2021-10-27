@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         
         userNameTF.delegate = self
         passwordTF.delegate = self
+
     }
 
     let userName = "User"
@@ -65,10 +66,10 @@ class LoginViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    // Метод для скрытия клавиатуры тапом по экрану
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
-    }
+            self.view.endEditing(true) }
+
 }
 
 extension LoginViewController: UITextFieldDelegate {
