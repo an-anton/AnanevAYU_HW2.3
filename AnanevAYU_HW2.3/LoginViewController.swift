@@ -10,21 +10,17 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet var loginButton: UIButton!
-    
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = loginButton.frame.height / 5
-        
         userNameTF.delegate = self
         passwordTF.delegate = self
-
     }
 
-    let userName = "User"
-    let userPassword = "Password"
+    let user = User()
     
     @IBAction func forgotUserOrPasswordAction(_ sender: UIButton) {
         switch sender.tag {
@@ -38,13 +34,13 @@ class LoginViewController: UIViewController {
                 showAlert(title: "Invalid login or password", message: "Please enter user name or password")
             }
             
-            if userNameTF.text == userName && passwordTF.text != userPassword {
+            if userNameTF.text == user.login && passwordTF.text != user.password {
                 showAlert(title: "Invalid password", message: "Please enter correct your password")
-                userNameTF.text = userName
+                userNameTF.text = user.login
                 passwordTF.text = ""
             }
             
-            if userNameTF.text != userName && passwordTF.text != userPassword {
+            if userNameTF.text != user.login && passwordTF.text != user.password {
                 showAlert(title: "Invalid login or password", message: "Please enter correct user name or password")
                 userNameTF.text = ""
                 passwordTF.text = ""
@@ -55,16 +51,34 @@ class LoginViewController: UIViewController {
         }
     }
    // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as! UITabBarController
         
-//        let tabBarController = segue.destination as! UITabBarController
-        
-        
-        
-//            if let welcomeVC = viewController as? WelcomeViewController {
-//                welcomeVC.welcomeUser = userNameTF.text
+        for viewController in tabBarController.viewControllers! {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.name = user.name
+            }
             
+            if let hobbyVC = viewController as? HobbyViewController {
+                hobbyVC.hobby = user.hobby
+            }
+           
+            if let navigationVC = viewController as? UINavigationController {
+                
+                for viewController in navigationVC.viewControllers {
+                    if let aboutMeVC = viewController as? AboutMeViewController {
+                        aboutMeVC.name = user.name
+                        aboutMeVC.age = user.age
+                    }
+                    
+                    if let aboutMeMoreVC = viewController as? AboutMeButtonViewController {
+                        aboutMeMoreVC.userAboutMe = user.aboutMeMore // не смог разобраться почему не передаются данные по последнему контроллеру в navigationVC
+                    }
+                }
+            }
         }
+    }
     
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

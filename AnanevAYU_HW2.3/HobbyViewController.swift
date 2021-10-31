@@ -11,13 +11,12 @@ class HobbyViewController: UIViewController {
     
     @IBOutlet var hobbyLabel: UILabel!
     
-    let objectUser = User()
-    
+    var hobby: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        hobbyLabel.text = objectUser.hobby
+        hobbyLabel.text = hobby
     }
     
 

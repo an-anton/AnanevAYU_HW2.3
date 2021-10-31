@@ -12,5 +12,5 @@ struct User {
     var name = "Антон"
     var age = 33
     var hobby = "Разработка iOS приложений"
-    var aboutMe = "Тут должно быть что то обо мне..."
+    var aboutMeMore = "Тут должно быть что то обо мне..."
 }

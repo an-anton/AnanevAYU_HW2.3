@@ -11,12 +11,16 @@ class AboutMeViewController: UIViewController {
     
     @IBOutlet var aboutMeLabel: UILabel!
     
-    let objectUser = User()
+    var name: String!
+    var age: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        aboutMeLabel.text = "Привет, меня зовут \(objectUser.name). Мне \(objectUser.age) Для подробной информации обо мне нажми на кномку ниже"
+        
+        guard let nameUser = name  else { return }
+        guard let nameAge = age  else { return }
+        
+        aboutMeLabel.text = "Привет, меня зовут \(nameUser). Мне \(nameAge) Для подробной информации обо мне нажми на кномку ниже"
     }
     
 

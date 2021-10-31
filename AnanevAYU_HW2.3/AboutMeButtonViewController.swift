@@ -11,14 +11,12 @@ class AboutMeButtonViewController: UIViewController {
 
     @IBOutlet var labelAboutMe: UILabel!
     
-    let userAboutMe = User()
-    
+    var userAboutMe: String! 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        labelAboutMe.text = userAboutMe.aboutMe
-        
-        
+        guard let aboutMeMore = userAboutMe else { return }
+        labelAboutMe.text = aboutMeMore
     }
 }
