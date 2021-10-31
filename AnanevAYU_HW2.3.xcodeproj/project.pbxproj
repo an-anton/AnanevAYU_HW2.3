@@ -13,7 +13,11 @@
 		272085BC2727EE0200396402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272085BA2727EE0200396402 /* Main.storyboard */; };
 		272085BE2727EE0600396402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272085BD2727EE0600396402 /* Assets.xcassets */; };
 		272085C12727EE0600396402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272085BF2727EE0600396402 /* LaunchScreen.storyboard */; };
+		27D05046272C9E2700E44FDD /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D05045272C9E2700E44FDD /* AboutMeViewController.swift */; };
+		27D05048272C9E6F00E44FDD /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D05047272C9E6F00E44FDD /* HobbyViewController.swift */; };
+		27D0504F272D484C00E44FDD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0504E272D484C00E44FDD /* Model.swift */; };
 		27FAE42F2729622C008732D6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAE42E2729622C008732D6 /* WelcomeViewController.swift */; };
+		27FC636D272D904E003B5CE7 /* AboutMeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC636C272D904E003B5CE7 /* AboutMeButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +29,11 @@
 		272085BD2727EE0600396402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272085C02727EE0600396402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272085C22727EE0600396402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D05045272C9E2700E44FDD /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		27D05047272C9E6F00E44FDD /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		27D0504E272D484C00E44FDD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		27FAE42E2729622C008732D6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		27FC636C272D904E003B5CE7 /* AboutMeButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271919B3272BFB1D009DA83F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				272085B82727EE0200396402 /* LoginViewController.swift */,
+				27FAE42E2729622C008732D6 /* WelcomeViewController.swift */,
+				27D05047272C9E6F00E44FDD /* HobbyViewController.swift */,
+				27D05045272C9E2700E44FDD /* AboutMeViewController.swift */,
+				27FC636C272D904E003B5CE7 /* AboutMeButtonViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		272085A82727EE0200396402 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +78,48 @@
 		272085B32727EE0200396402 /* AnanevAYU_HW2.3 */ = {
 			isa = PBXGroup;
 			children = (
-				272085B42727EE0200396402 /* AppDelegate.swift */,
-				272085B62727EE0200396402 /* SceneDelegate.swift */,
-				272085B82727EE0200396402 /* LoginViewController.swift */,
-				27FAE42E2729622C008732D6 /* WelcomeViewController.swift */,
-				272085BA2727EE0200396402 /* Main.storyboard */,
-				272085BD2727EE0600396402 /* Assets.xcassets */,
+				27D0504D272D479A00E44FDD /* Model */,
+				271919B3272BFB1D009DA83F /* ViewControllers */,
+				27D05049272D460E00E44FDD /* Storyboards */,
+				27D0504B272D463A00E44FDD /* Configs */,
+				27D0504A272D462500E44FDD /* Resorses */,
 				272085BF2727EE0600396402 /* LaunchScreen.storyboard */,
 				272085C22727EE0600396402 /* Info.plist */,
 			);
 			path = AnanevAYU_HW2.3;
+			sourceTree = "<group>";
+		};
+		27D05049272D460E00E44FDD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				272085BA2727EE0200396402 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		27D0504A272D462500E44FDD /* Resorses */ = {
+			isa = PBXGroup;
+			children = (
+				272085BD2727EE0600396402 /* Assets.xcassets */,
+			);
+			name = Resorses;
+			sourceTree = "<group>";
+		};
+		27D0504B272D463A00E44FDD /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				272085B42727EE0200396402 /* AppDelegate.swift */,
+				272085B62727EE0200396402 /* SceneDelegate.swift */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		27D0504D272D479A00E44FDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27D0504E272D484C00E44FDD /* Model.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D0504F272D484C00E44FDD /* Model.swift in Sources */,
 				272085B92727EE0200396402 /* LoginViewController.swift in Sources */,
+				27D05046272C9E2700E44FDD /* AboutMeViewController.swift in Sources */,
 				27FAE42F2729622C008732D6 /* WelcomeViewController.swift in Sources */,
+				27FC636D272D904E003B5CE7 /* AboutMeButtonViewController.swift in Sources */,
+				27D05048272C9E6F00E44FDD /* HobbyViewController.swift in Sources */,
 				272085B52727EE0200396402 /* AppDelegate.swift in Sources */,
 				272085B72727EE0200396402 /* SceneDelegate.swift in Sources */,
 			);

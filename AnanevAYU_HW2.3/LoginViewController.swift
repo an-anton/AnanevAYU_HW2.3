@@ -54,22 +54,27 @@ class LoginViewController: UIViewController {
             break
         }
     }
-    
+   // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUser = userNameTF.text
-    }
+        
+//        let tabBarController = segue.destination as! UITabBarController
+        
+        
+        
+//            if let welcomeVC = viewController as? WelcomeViewController {
+//                welcomeVC.welcomeUser = userNameTF.text
+            
+        }
     
-    @IBAction func unwind(for segue: UIStoryboardSegue){
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
-        dismiss(animated: true)
     }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true) }
-
 }
 
 extension LoginViewController: UITextFieldDelegate {
